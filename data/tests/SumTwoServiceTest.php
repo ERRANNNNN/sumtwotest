@@ -35,4 +35,12 @@ class SumTwoServiceTest extends TestCase
 
         $this->assertSame([2,5], $this->sumTwoService->sumTwo($nums, $target));
     }
+    public function testSumTwo4()
+    {
+        $nums = [1,2,3,4,5];
+        $target = 10;
+
+        $this->assertSame([], $this->sumTwoService->sumTwo($nums, $target));
+    }
+
 }
